@@ -89,10 +89,12 @@ position: relative;
 position: relative;
 list-style: none;
 margin: 10px 0;
+color :#fff
 }
 .contactInfo ul li a
 {
     text-decoration: none;
+    color :#fff
 }
 .contactInfo ul li .icon
 {
@@ -103,7 +105,7 @@ color: #E5E4E2;
 }
 .contactInfo ul li span
 {
-color: #fff;
+color:inherit;
 font-weight: 400;
 font-size: 16px;
 vertical-align: middle;
