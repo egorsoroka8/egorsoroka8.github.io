@@ -94,11 +94,6 @@ margin: 10px 0;;
 {
     text-decoration: none;
 }
-.contactInfo ul li span
-{
-    text-decoration: none;
-    color :inherit;
-}
 .contactInfo ul li .icon
 {
 display: inline-block;
@@ -112,6 +107,8 @@ color: #fff;
 font-weight: 400;
 font-size: 16px;
 vertical-align: middle;
+text-decoration: none;
+color :inherit
 }
 .contactInfo.education li
 {
