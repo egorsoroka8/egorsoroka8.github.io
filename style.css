@@ -96,7 +96,7 @@ margin: 10px 0;;
 }
 .contactInfo ul li span
 {
-    text-decoration: none;
+    text-decoration-color: white;
 }
 .contactInfo ul li .icon
 {
