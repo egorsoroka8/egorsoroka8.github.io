@@ -296,8 +296,7 @@ color: #333;
     }
     .about .box .year_company
     {
-        max-width: none;
-        max-width: none;
+        min-width: none;
         margin-bottom: 5px
     }
     .about_tools .box {
