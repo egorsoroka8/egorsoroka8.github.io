@@ -88,7 +88,7 @@ position: relative;
 {
 position: relative;
 list-style: none;
-margin: 10px 0;;
+margin: 10px 0;
 }
 .contactInfo ul li a
 {
@@ -195,7 +195,9 @@ color: #333;
 }
 .about .box .year_company
 {
+    max-width: 150px;
     min-width: 150px;
+    
 }
 .about .box .year_company h5
 {
