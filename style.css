@@ -94,6 +94,10 @@ margin: 10px 0;;
 {
     text-decoration: none;
 }
+.contactInfo ul li span
+{
+    text-decoration: none;
+}
 .contactInfo ul li .icon
 {
 display: inline-block;
