@@ -105,7 +105,7 @@ color: #E5E4E2;
 }
 .contactInfo ul li span
 {
-color:inherit;
+color:inherit !important;
 font-weight: 400;
 font-size: 16px;
 vertical-align: middle;
