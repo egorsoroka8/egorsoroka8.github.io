@@ -79,6 +79,7 @@ text-transform: uppercase;
 font-weight: 300;
 letter-spacing: 1px;
 margin-bottom: 20px;
+text-align: center;
 }
 .contactInfo ul
 {
@@ -182,6 +183,11 @@ color: #333;
 {
     margin-bottom: 30px;
 }
+.about_tools .boxes
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
 .about .box
 {
     display: flex;
@@ -219,15 +225,17 @@ color: #333;
     position: relative;
     width: 100%;
     display: grid;
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
+    padding-inline-end: 40px;
 }
 .about_tools .box h4
 {
     text-transform: uppercase;
     color :#848c90;
     font-weight: 500;
+    padding-bottom: 5px;
 }
 .about_tools .box .percent
 {
@@ -245,38 +253,8 @@ color: #333;
     height: 100%;
     background: #003147;
 }
-.about_know .box
-{
-    position: relative;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    justify-content: center;
-    align-items: center;
-}
-.about_know .box h4
-{
-    text-transform: uppercase;
-    color :#848c90;
-    font-weight: 500;
-}
-.about_know .box .percent
-{
-    position: relative;
-    width: 100%;
-    height: 8px;
-    background: #E5E4E2;
-    font-weight: 500;
-}
-.about_know .box .percent div
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background: #003147;
-}
-@media (max-width : 1000px) 
+
+@media (max-width : 1100px) 
 {
     .container
     {
@@ -301,8 +279,8 @@ color: #333;
     }
     .about_tools .box {
          grid-template-columns: 1fr;
+         padding-inline-end: 20px;
     }
-    .about_know .box {
-        grid-template-columns: 1fr;
-    }
+
 }
+
