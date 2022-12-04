@@ -281,6 +281,17 @@ color: #333;
          grid-template-columns: 1fr;
          padding-inline-end: 20px;
     }
+}
 
+@media only screen and (max-width: 500px)
+{
+    .title2
+    {
+        text-align: center;
+    }
+    .about_tools .boxes {
+        display: grid;
+        grid-template-columns: none;
+    }
 }
 
