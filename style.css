@@ -253,7 +253,7 @@ color: #333;
     height: 100%;
     background: #003147;
 }
-.percent .tooltiptext 
+.box .tooltiptext 
 {
   visibility: hidden;
   background-color: #003147;
@@ -262,7 +262,7 @@ color: #333;
   font-weight: 400;
   font-size: 0.8em;
   text-align: left;
-  border-radius: 5px;
+  border-radius: 3px;
   padding: 10px;
   position: absolute;
   z-index: 1;
@@ -270,7 +270,7 @@ color: #333;
   opacity: 0;
   transition: opacity 0.3s;
 }
-.percent:hover .tooltiptext {
+.box:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
 }
