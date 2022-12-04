@@ -253,6 +253,27 @@ color: #333;
     height: 100%;
     background: #003147;
 }
+.box .tooltiptext 
+{
+  visibility: hidden;
+  background-color: #003147;
+  width: inherit;
+  color: #fff;
+  font-weight: 400;
+  font-size: 0.8em;
+  text-align: left;
+  border-radius: 3px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  top: 125%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.box:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
 
 @media (max-width : 1100px) 
 {
