@@ -220,10 +220,11 @@ p {
     font-size: 16px;
     margin-bottom: 10px;
 }
-.about_tools .boxes .box a
-{
+
+.about_tools .boxes .box a {
     text-decoration: none;
 }
+
 .about_tools .box {
     position: relative;
     width: 100%;
