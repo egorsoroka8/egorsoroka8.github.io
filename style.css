@@ -191,11 +191,18 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 20px;
+    list-style: none;
 }
 
-p {
+.about ul li {
     color: #333;
+    list-style: none;
 }
+
+.about ul li:first-child {
+margin-bottom: 10px;
+}
+
 
 .about_tools {
     margin-bottom: 30px;
