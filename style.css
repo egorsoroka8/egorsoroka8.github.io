@@ -275,6 +275,10 @@ p {
     transition: opacity 0.3s;
 }
 
+.box:hover h4{
+text-shadow: #000000;
+}
+
 .box:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
