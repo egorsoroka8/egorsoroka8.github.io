@@ -27,6 +27,22 @@ body {
     box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
 
+.langContainer ul li {
+    list-style: none;
+    display: inline;
+}
+
+.langContainer .translate {
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.0em;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
 .profileText {
     position: relative;
     display: flex;
@@ -54,17 +70,18 @@ body {
     object-fit: cover;
 }
 
-.profileText h2 {
+.profileText ul {
+    list-style: none;
     color: #fff;
-    font-size: 1.4em;
     margin-top: 20px;
     text-transform: uppercase;
     text-align: center;
     font-weight: 600;
     line-height: 1.4em;
+    font-size: 1.4em;
 }
 
-.profileText h2 span {
+.profileText .target {
     font-size: 1.0em;
     font-weight: 400;
 }
