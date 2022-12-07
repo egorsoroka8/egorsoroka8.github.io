@@ -199,10 +199,9 @@ body {
     list-style: none;
 }
 
-.about ul li:first-child {
+.about ul :first-child {
 margin-bottom: 10px;
 }
-
 
 .about_tools {
     margin-bottom: 30px;
@@ -286,7 +285,6 @@ margin-bottom: 10px;
     visibility: hidden;
     background-color: #003147;
     width: inherit;
-    color: #fff;
     font-weight: 400;
     font-size: 0.8em;
     text-align: left;
@@ -297,6 +295,11 @@ margin-bottom: 10px;
     top: 125%;
     opacity: 0;
     transition: opacity 0.3s;
+}
+
+.box .tooltiptext li {
+    color: #fff;
+    margin-bottom: unset;
 }
 
 .box:hover .tooltiptext {
