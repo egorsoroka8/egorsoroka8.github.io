@@ -27,6 +27,22 @@ body {
     box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
 
+.langContainer ul li {
+    list-style: none;
+    display: inline;
+}
+
+.langContainer .translate {
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.0em;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
 .profileText {
     position: relative;
     display: flex;
@@ -54,17 +70,18 @@ body {
     object-fit: cover;
 }
 
-.profileText h2 {
+.profileText ul {
+    list-style: none;
     color: #fff;
-    font-size: 1.4em;
     margin-top: 20px;
     text-transform: uppercase;
     text-align: center;
     font-weight: 600;
     line-height: 1.4em;
+    font-size: 1.4em;
 }
 
-.profileText h2 span {
+.profileText .target {
     font-size: 1.0em;
     font-weight: 400;
 }
@@ -174,10 +191,16 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 20px;
+    list-style: none;
 }
 
-p {
+.about ul li {
     color: #333;
+    list-style: none;
+}
+
+.about ul :first-child {
+margin-bottom: 10px;
 }
 
 .about_tools {
@@ -262,7 +285,6 @@ p {
     visibility: hidden;
     background-color: #003147;
     width: inherit;
-    color: #fff;
     font-weight: 400;
     font-size: 0.8em;
     text-align: left;
@@ -273,6 +295,11 @@ p {
     top: 125%;
     opacity: 0;
     transition: opacity 0.3s;
+}
+
+.box .tooltiptext li {
+    color: #fff;
+    margin-bottom: unset;
 }
 
 .box:hover .tooltiptext {

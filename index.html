@@ -26,15 +26,24 @@
 <body>
     <div class="container">
         <div class="left_side">
+            <div class="langContainer">
+                <ul>
+                    <li><button class="translate" id="ru">RU</button></li>
+                    <li><button class="translate" id="en">EN</button></li>
+                </ul>
+            </div>
             <div class="profileText">
                 <div class="imgBx">
                     <img src="img.jpg">
                 </div>
-                <h2>Егор Сорокин<br><span>QA Engineer</span></h2>
+                <ul>
+                    <li class="name lang" key="name">Егор Сорокин</li>
+                    <li class="target lang" key="target">QA Engineer</li>
+                </ul>
             </div>
 
             <div class="contactInfo">
-                <h3 class="title">Контакты</h3>
+                <h3 class="title lang" key="contact">Контакты</h3>
                 <ul>
                     <li>
                         <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
@@ -76,25 +85,25 @@
                 <ul>
                     <li>
                         <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-                        <span class="text">Турция, Измир</span>
+                        <span class="text lang" key="city">Турция, Измир</span>
                     </li>
                 </ul>
             </div>
 
             <div class="contactInfo education">
-                <h3 class="title">Образование</h3>
+                <h3 class="title lang" key="education">Образование</h3>
                 <ul>
                     <li>
                         <h5>2022</h5>
-                        <h4>QA Manual Engineer</h4>
+                        <h4 class="lang" key="courseName">Ручное тестирование ПО</h4>
                         <h4>SkillFactory</h4>
                     </li>
                 </ul>
                 <ul>
                     <li>
                         <h5>2010-2015</h5>
-                        <h4>Инженер-машиностроитель</h4>
-                        <h4>Комсомольский-на-Амуре Государственный Университет</h4>
+                        <h4 class="lang" key="degreeName">Инженер-машиностроитель</h4>
+                        <h4 class="lang" key="university">Комсомольский-на-Амуре Государственный Университет</h4>
                     </li>
                 </ul>
                 <ul>
@@ -107,16 +116,16 @@
             </div>
 
             <div class="contactInfo language">
-                <h3 class="title">Языки</h3>
+                <h3 class="title lang" key="languages">Языки</h3>
                 <ul>
                     <li>
-                        <span class="text">Русский</span>
+                        <span class="text lang" key="langRus">Русский</span>
                         <span class="percent">
                             <div style="width: 100%;"></div>
                         </span>
                     </li>
                     <li>
-                        <span class="text">Английский</span>
+                        <span class="text lang" key="langEng">Английский</span>
                         <span class="percent">
                             <div style="width: 60%;"></div>
                         </span>
@@ -126,35 +135,38 @@
         </div>
         <div class="right_side">
             <div class="about">
-                <h2 class="title2">Обо мне</h2>
-                <p>Проактивная личность и командный игрок. Тестирование выбрал как
-                    продолжение карьеры, ранее более пяти лет обеспечивал качество автомобилей.
-                    Тестировал компоненты и настройки, запускал новые модели в производство.</br>
-                    <br>Люблю изучать новое на практике, данную страницу написал для более глубокого изучения HTML и
-                    CSS.
-                    В разделе инструменты вы можете найти ссылки на мои тестовые артефакты, коллекции и запросы.
-                </p>
+                <h2 class="title2 lang" key="about">Обо мне</h2>
+                <ul>
+                    <li class="lang" key="aboutText01">Проактивная личность и командный игрок. Тестирование выбрал как
+                        продолжение карьеры, ранее более пяти лет обеспечивал качество автомобилей.
+                        Тестировал компоненты и настройки, запускал новые модели в производство.</li>
+                    <li class="lang" key="aboutText02">Люблю изучать новое на практике, данную страницу написал для
+                        более глубокого изучения HTML и CSS.
+                        В разделе инструменты вы можете найти ссылки на мои тестовые артефакты, коллекции и запросы.
+                    </li>
+                </ul>
             </div>
             <div class="about">
-                <h2 class="title2">Опыт</h2>
+                <h2 class="title2 lang" key="experience">Опыт</h2>
                 <div class="box">
                     <div class="year_company">
                         <h5>2022</h5>
                         <h5>SkillFactory</h5>
                     </div>
                     <div class="text">
-                        <h4>Тестировщик</h4>
+                        <h4 class="lang" key="expQA">Тестировщик ПО</h4>
                         <ul>
-                            <li>- Анализ требований и пользовательских сценариев</li>
-                            <li>- Тест дизайн (классы эквивалентности, граничные значения, таблица принятия решений и
+                            <li class="lang" key="qaDuties1">- Анализ требований и пользовательских сценариев</li>
+                            <li class="lang" key="qaDuties2">- Тест дизайн (классы эквивалентности, граничные значения,
+                                таблица принятия решений и
                                 т.д.)</li>
-                            <li>- Написание чек-листов и тест кейсов</li>
-                            <li>- Заведение баг-репортов</li>
-                            <li>- Тестирование UI (DevTools)</li>
-                            <li>- Тестирование API (Postman)</li>
-                            <li>- SQL запросы к базам данных (PostgreSQL)</li>
-                            <li>- Подмена трафика (Charles Proxy)</li>
-                            <li>- Актуализация тестовой документации</li>
+                            <li class="lang" key="qaDuties3">- Написание чек-листов и тест кейсов</li>
+                            <li class="lang" key="qaDuties4">- Заведение баг-репортов (Jira)</li>
+                            <li class="lang" key="qaDuties5">- Тестирование UI (DevTools)</li>
+                            <li class="lang" key="qaDuties6">- Тестирование API (Postman)</li>
+                            <li class="lang" key="qaDuties7">- SQL запросы к базам данных (PostgreSQL)</li>
+                            <li class="lang" key="qaDuties8">- Подмена трафика (Charles Proxy)</li>
+                            <li class="lang" key="qaDuties9">- Актуализация тестовой документации</li>
                         </ul>
                     </div>
                 </div>
@@ -164,31 +176,31 @@
                         <h5>Hyundai Motor Manufacturing RUS</h5>
                     </div>
                     <div class="text">
-                        <h4>Инженер контроля качества</h4>
+                        <h4 class="lang" key="expQC">Инженер контроля качества</h4>
                         <ul>
-                            <li>- Тестирование новых компонентов и настроек</li>
-                            <li>- Занесение дефектов в СМК</li>
-                            <li>- Создание документации на основе спецификаций</li>
-                            <li>- Расследование дефектов и поиск коренной причины</li>
+                            <li class="lang" key="qcDuties1">- Тестирование новых компонентов и настроек</li>
+                            <li class="lang" key="qcDuties2">- Занесение дефектов в СМК</li>
+                            <li class="lang" key="qcDuties3">- Создание документации на основе спецификаций</li>
+                            <li class="lang" key="qcDuties4">- Расследование дефектов и поиск коренной причины</li>
                         </ul>
                     </div>
                 </div>
                 <div class="about_tools">
-                    <h2 class="title2">Инструменты</h2>
+                    <h2 class="title2 lang" key="tools">Инструменты</h2>
                     <div class="boxes">
                         <div class="box">
                             <a href="https://github.com/egorsoroka8/postman" target="_blank" rel="noopener noreferrer">
                                 <h4>Postman</h4>
                                 <div class="percent">
                                     <div style="width: 70%;"></div>
-                                    <span class="tooltiptext">
-                                        - Создание коллекций и настройка окружения для автоматизированного
-                                        тестирования</br>
-                                        - Использование динамических переменных из библиотеки Postman</br>
-                                        - Добавление предзапросов и тестов</br>
-                                        - Создание массивов для недостающих переменных на JavaScript</br>
-                                        - Оптимизация тестовых сценариев с помощью техники парного тестирования</br>
-                                    </span>
+                                    <ul class="tooltiptext">
+                                        <li class="lang" key="toolsPostman01">- Создание коллекций и настройка окружения для автоматизированного
+                                            тестирования</li>
+                                        <li class="lang" key="toolsPostman02">- Использование динамических переменных из библиотеки Postman</li>
+                                        <li class="lang" key="toolsPostman03">- Добавление предзапросов и тестов</li>
+                                        <li class="lang" key="toolsPostman04">- Создание массивов для недостающих переменных на JavaScript</li>
+                                        <li class="lang" key="toolsPostman05">- Оптимизация тестовых сценариев с помощью техники парного тестирования</li>
+                                    </ul>
                                 </div>
                             </a>
                         </div>
@@ -197,10 +209,10 @@
                                 <h4>Bash (UNIX)</h4>
                                 <div class="percent">
                                     <div style="width: 55%;"></div>
-                                    <span class="tooltiptext">
-                                        - Команды : pwd, mkdir, rmdir, rm, touch, cd, ls, mv, cp, cat, nano, grep,
-                                        find, curl
-                                    </span>
+                                    <ul class="tooltiptext">
+                                        <li class="lang" key="toolsBash">- Команды : pwd, mkdir, rmdir, rm, touch, cd, ls, mv, cp, cat, nano, grep, find, curl
+                                        </li>
+                                    </ul>
                                 </div>
                             </a>
                         </div>
@@ -209,10 +221,11 @@
                                 <h4>PostgreSQL</h4>
                                 <div class="percent">
                                     <div style="width: 55%;"></div>
-                                    <span class="tooltiptext">
-                                        - Команды : SELECT, JOIN, INSERT, UPDATE, DELETE, AS, ORDER BY, GROUP BY,
-                                        LIMIT, DISTINCT, CONCAT, TIME, TIMEDIFF, COUNT, ROUND, MAX, MIN, AVG</br>
-                                    </span>
+                                    <ul class="tooltiptext">
+                                        <li class="lang" key="toolsPostgreSQL">- Команды : SELECT, JOIN, INSERT, UPDATE, DELETE, AS, ORDER BY, GROUP BY,
+                                            LIMIT, DISTINCT, CONCAT, TIME, TIMEDIFF, COUNT, ROUND, MAX, MIN, AVG
+                                        </li>
+                                    </ul>
                                 </div>
                             </a>
                         </div>
@@ -221,11 +234,11 @@
                                 <h4>DevTools</h4>
                                 <div class="percent">
                                     <div style="width: 70%;"></div>
-                                    <span class="tooltiptext">
-                                        - Elements : Проверка UI на соответствие дизайн макету</br>
-                                        - Console : Проверка JavaScript на наличие ошибок</br>
-                                        - Network : Проверка и анализ запросов</br>
-                                    </span>
+                                    <ul class="tooltiptext">
+                                        <li class="lang" key="toolsDevTools01">- Elements : Проверка UI на соответствие дизайн макету</li>
+                                        <li class="lang" key="toolsDevTools02">- Console : Проверка JavaScript на наличие ошибок</li>
+                                        <li class="lang" key="toolsDevTools03">- Network : Проверка и анализ запросов</li>
+                                    </ul>
                                 </div>
                             </a>
                         </div>
@@ -235,9 +248,9 @@
                                 <h4>Charles Proxy</h4>
                                 <div class="percent">
                                     <div style="width: 55%;"></div>
-                                    <span class="tooltiptext">
-                                        Инструменты : Map Remote, Map Local, Rewrite, Breakpoints
-                                    </span>
+                                    <ul class="tooltiptext">
+                                       <li class="lang" key="toolsCharlesProxy">Инструменты : Map Remote, Map Local, Rewrite, Breakpoints.</li>
+                                    </ul>
                                 </div>
                             </a>
                         </div>
@@ -246,9 +259,9 @@
                                 <h4>GitHub</h4>
                                 <div class="percent">
                                     <div style="width: 55%;"></div>
-                                    <span class="tooltiptext">
-                                        - Команды : push, put, pull, merge.
-                                    </span>
+                                    <ul class="tooltiptext">
+                                       <li class="lang" key="toolsGitHub">- Команды : push, put, pull, merge.</li>
+                                    </ul>
                                 </div>
                             </a>
                         </div>
@@ -257,17 +270,17 @@
                                 <h4>Jira</h4>
                                 <div class="percent">
                                     <div style="width: 55%;"></div>
-                                    <span class="tooltiptext">
-                                        - Zephyr : создание тест кейсов и баг-репортов</br>
-                                        - Confluence : проверка и анализ требований</br>
-                                    </span>
+                                    <ul class="tooltiptext">
+                                        <li  class="lang" key="toolsJira01">- Zephyr : создание тест кейсов и баг-репортов</li>
+                                        <li class="lang" key="toolsJira02">- Confluence : проверка и анализ требований</li>
+                                    </ul>
                                 </div>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="about_tools">
-                    <h2 class="title2">Знания</h2>
+                    <h2 class="title2 lang" key="knowledge">Знания</h2>
                     <div class="boxes">
                         <div class="box">
                             <h4>RESTful | SOAP</h4>
@@ -304,6 +317,7 @@
             </div>
         </div>
     </div>
+    <script src="jquery.min.js"></script>
 </body>
 
 </html>
